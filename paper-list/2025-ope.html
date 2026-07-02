@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 8.1.2">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="https://imgr2.karltan.com/logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://imgr2.karltan.com/logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://imgr2.karltan.com/logo.png">
+  <link rel="mask-icon" href="https://imgr2.karltan.com/logo.png" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.css" integrity="sha256-gkQVf8UKZgQ0HyuxL/VnacadJ+D2Kox2TCEBuNQg5+w=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-minimal.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous" defer></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.karltan.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.27.0","exturl":true,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"tomorrow-night-bright","dark":"tomorrow-night-bright"},"prism":{"light":"prism-tomorrow","dark":"prism-tomorrow"},"copy_button":{"enable":true,"style":"mac"},"fold":{"enable":true,"height":500},"language":true},"bookmark":{"enable":false,"color":"#222","save":"manual"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":100,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInUp","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="整理的2025年Object Pose Estimation顶会论文列表。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【论文列表】2025年Object Pose Estimation顶会论文列表">
+<meta property="og:url" content="https://blog.karltan.com/paper-list/2025-ope.html">
+<meta property="og:site_name" content="Karl的博客">
+<meta property="og:description" content="整理的2025年Object Pose Estimation顶会论文列表。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-07-02T14:29:51.000Z">
+<meta property="article:modified_time" content="2026-07-02T14:29:51.000Z">
+<meta property="article:author" content="Karl">
+<meta property="article:tag" content="2025">
+<meta property="article:tag" content="3DV">
+<meta property="article:tag" content="AAAI">
+<meta property="article:tag" content="ACCV">
+<meta property="article:tag" content="ACM MM">
+<meta property="article:tag" content="ACML">
+<meta property="article:tag" content="AISTATS">
+<meta property="article:tag" content="BMVC">
+<meta property="article:tag" content="CVPR">
+<meta property="article:tag" content="CoRL">
+<meta property="article:tag" content="ECAI">
+<meta property="article:tag" content="ECCV">
+<meta property="article:tag" content="ICANN">
+<meta property="article:tag" content="ICCV">
+<meta property="article:tag" content="ICIP">
+<meta property="article:tag" content="ICLR">
+<meta property="article:tag" content="ICME">
+<meta property="article:tag" content="ICML">
+<meta property="article:tag" content="ICPR">
+<meta property="article:tag" content="ICRA">
+<meta property="article:tag" content="IJCAI">
+<meta property="article:tag" content="IJCNN">
+<meta property="article:tag" content="IROS">
+<meta property="article:tag" content="ISMAR">
+<meta property="article:tag" content="NeurIPS">
+<meta property="article:tag" content="Object Pose Estimation">
+<meta property="article:tag" content="RSS">
+<meta property="article:tag" content="SIGGRAPH">
+<meta property="article:tag" content="SIGGRAPH Asia">
+<meta property="article:tag" content="WACV">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://blog.karltan.com/paper-list/2025-ope.html">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.karltan.com/paper-list/2025-ope.html","path":"paper-list/2025-ope.html","title":"【论文列表】2025年Object Pose Estimation顶会论文列表"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>【论文列表】2025年Object Pose Estimation顶会论文列表 | Karl的博客</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.umd.js" integrity="sha256-a+H7FYzJv6oU2hfsfDGM2Ohw/cR9v+hPfxHCLdmCrE8=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script><script src="/js/pjax.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/js/third-party/search/local-search.js" defer></script>
+
+  <script class="next-config" data-name="pdf" type="application/json">{"object_url":{"url":"https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.3.1/pdfobject.min.js","integrity":"sha256-jI72I8ZLVflVOisZIOaLvRew3tyvzeu6aZXFm7P7dEo="},"url":"/lib/pdf/web/viewer.html"}</script>
+  <script src="/js/third-party/tags/pdf.js" defer></script>
+
+  <script class="next-config" data-name="mermaid" type="application/json">{"enable":true,"theme":{"light":"default","dark":"dark"},"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.10.1/mermaid.min.js","integrity":"sha256-BmQmdWDS8X2OTbrwELWK366LV6escyWhHHe0XCTU/Hk="}}</script>
+  <script src="/js/third-party/tags/mermaid.js" defer></script>
+
+  <script class="next-config" data-name="wavedrom" type="application/json">{"enable":true,"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/wavedrom/3.5.0/wavedrom.min.js","integrity":"sha256-INLAoJc6quTNfiMWkGZniYO2cxE8mHpddnLow1m6RFs="}}</script>
+  <script class="next-config" data-name="wavedrom_skin" type="application/json">{"enable":true,"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/wavedrom/3.5.0/skins/default.js","integrity":"sha256-fduc/Zszk5ezWws2uInY/ALWVmIrmV6VTgXbsYSReFI="}}</script>
+  <script src="/js/third-party/tags/wavedrom.js" defer></script>
+
+  <script src="/js/third-party/fancybox.js" defer></script>
+
+  <script src="/js/third-party/pace.js" defer></script>
+
+
+  
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"ams","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js" defer></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/3.0.1/quicklink.umd.js" integrity="sha256-44BednzIpUeQJcY8qtLyarFu0UCCTbgmWOvaoehiFQQ=" crossorigin="anonymous" defer></script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"url":"https://blog.karltan.com/paper-list/2025-ope.html"}</script>
+  <script src="/js/third-party/quicklink.js" defer></script>
+<link rel="dns-prefetch" href="https://waline.karltan.com">
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="Karl的博客" type="application/atom+xml">
+<link rel="alternate" href="/rss.xml" title="Karl的博客" type="application/rss+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Karl的博客</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-comments"><a href="/comments/" rel="section"><i class="fa fa-comments fa-fw"></i>留言板</a></li><li class="menu-item menu-item-links"><a href="/links/" rel="section"><i class="fa fa-link fa-fw"></i>友链</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">4</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">3</span></a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">33</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-travellings"><span class="exturl" data-url="aHR0cHM6Ly93d3cudHJhdmVsbGluZ3MuY24vZ28uaHRtbA=="><i class="fa fa-train-subway fa-fw"></i>开往</span></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#cvpr"><span class="nav-text">CVPR</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#neurips"><span class="nav-text">NeurIPS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#iclr"><span class="nav-text">ICLR</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#icml"><span class="nav-text">ICML</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#eccv"><span class="nav-text">ECCV</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#iccv"><span class="nav-text">ICCV</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#aaai"><span class="nav-text">AAAI</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ijcai"><span class="nav-text">IJCAI</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#wacv"><span class="nav-text">WACV</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#icra"><span class="nav-text">ICRA</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#siggraph"><span class="nav-text">SIGGRAPH</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#acm-mm"><span class="nav-text">ACM MM</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#aistats"><span class="nav-text">AISTATS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#corl"><span class="nav-text">CoRL</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#iros"><span class="nav-text">IROS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#icpr"><span class="nav-text">ICPR</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#rss"><span class="nav-text">RSS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ijcnn"><span class="nav-text">IJCNN</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bmvc"><span class="nav-text">BMVC</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#dv"><span class="nav-text">3DV</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#icip"><span class="nav-text">ICIP</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#accv"><span class="nav-text">ACCV</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#icme"><span class="nav-text">ICME</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ecai"><span class="nav-text">ECAI</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ismar"><span class="nav-text">ISMAR</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#siggraph-asia"><span class="nav-text">SIGGRAPH Asia</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#icann"><span class="nav-text">ICANN</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#acml"><span class="nav-text">ACML</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Karl"
+      src="https://imgr2.karltan.com/profile.png">
+  <p class="site-author-name" itemprop="name">Karl</p>
+  <div class="site-description" itemprop="description">不积跬步无以至千里</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">33</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2thcmx0YW4wMzI4" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;karltan0328"><i class="fab fa-github fa-fw"></i>GitHub</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="bWFpbHRvOmFkbWluQGthcmx0YW4uY29t" title="E-Mail → mailto:admin@karltan.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</span>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml" rel="noopener me"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LzQuMC8="><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by.svg" alt="Creative Commons"></span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="sidebar-inner sidebar-blogroll">
+      <div class="links-of-blogroll animated">
+        <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+          链接
+        </div>
+        <ul class="links-of-blogroll-list">
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9kb2NzL2dldHRpbmctc3RhcnRlZC8=" title="https:&#x2F;&#x2F;theme-next.js.org&#x2F;docs&#x2F;getting-started&#x2F;">NexT Docs</span>
+            </li>
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly9wYXBlcmNvcGlsb3QuY29tLw==" title="https:&#x2F;&#x2F;papercopilot.com&#x2F;">Paper Copilot</span>
+            </li>
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly93d3cuZGVlcC1tbC5jb20v" title="https:&#x2F;&#x2F;www.deep-ml.com&#x2F;">Deep-ML</span>
+            </li>
+        </ul>
+      </div>
+    </div>
+        <div class="pjax">
+        
+        <div class="sidebar-inner sidebar-post-related">
+          <div class="animated">
+              <div class="links-of-blogroll-title"><i class="fa fa-signs-post fa-fw"></i>
+    相关文章
+  </div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <a class="popular-posts-link" href="/" rel="bookmark">
+      
+      </a>
+    </li>
+    <li class="popular-posts-item">
+      <a class="popular-posts-link" href="/setup/vim-configuration-file.html" rel="bookmark">
+        <time class="popular-posts-time">2026-06-12</time>
+        <br>
+      【环境配置】vim配置文件
+      </a>
+    </li>
+    <li class="popular-posts-item">
+      <a class="popular-posts-link" href="/hello-world.html" rel="bookmark">
+        <time class="popular-posts-time">2026-06-12</time>
+        <br>
+      Hello World
+      </a>
+    </li>
+    <li class="popular-posts-item">
+      <a class="popular-posts-link" href="/setup/tmux-configuration-file.html" rel="bookmark">
+        <time class="popular-posts-time">2026-06-12</time>
+        <br>
+      【环境配置】tmux配置文件
+      </a>
+    </li>
+  </ul>
+
+          </div>
+        </div>
+        </div>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.karltan.com/paper-list/2025-ope.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://imgr2.karltan.com/profile.png">
+      <meta itemprop="name" content="Karl">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Karl的博客">
+      <meta itemprop="description" content="不积跬步无以至千里">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="【论文列表】2025年Object Pose Estimation顶会论文列表 | Karl的博客">
+      <meta itemprop="description" content="整理的2025年Object Pose Estimation顶会论文列表。">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          【论文列表】2025年Object Pose Estimation顶会论文列表
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2026-07-02 22:29:51" itemprop="dateCreated datePublished" datetime="2026-07-02T22:29:51+08:00">2026-07-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/paper-list/" itemprop="url" rel="index"><span itemprop="name">论文列表</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">Waline：</span>
+  
+    <a title="waline" href="/paper-list/2025-ope.html#waline" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" data-path="/paper-list/2025-ope.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>2.4k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>9 分钟</span>
+    </span>
+</div>
+
+            <div class="post-description">整理的2025年Object Pose Estimation顶会论文列表。</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h2 id="cvpr">CVPR</h2>
+<ol type="1">
+<li>Any6D: Model-free 6D Pose Estimation of Novel Object
+<ul>
+<li>分类：任意物体方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVuYWNjZXNzLnRoZWN2Zi5jb20vY29udGVudC9DVlBSMjAyNS9odG1sL0xlZV9Bbnk2RF9Nb2RlbC1mcmVlXzZEX1Bvc2VfRXN0aW1hdGlvbl9vZl9Ob3ZlbF9PYmplY3RzX0NWUFJfMjAyNV9wYXBlci5odG1s">https://openaccess.thecvf.com/content/CVPR2025/html/Lee_Any6D_Model-free_6D_Pose_Estimation_of_Novel_Objects_CVPR_2025_paper.html<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RhZXllb3BsL0FueTZE">https://github.com/taeyeopl/Any6D<i class="fa fa-external-link-alt"></i></span></li>
+</ul></li>
+<li>CAP-Net: A Unified Network for 6D Pose and Size Estimation of
+Categorical Articulated Parts from a Single RGB-D Image
+<ul>
+<li>分类：类别级铰接物体方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVuYWNjZXNzLnRoZWN2Zi5jb20vY29udGVudC9DVlBSMjAyNS9odG1sL0h1YW5nX0NBUC1OZXRfQV9VbmlmaWVkX05ldHdvcmtfZm9yXzZEX1Bvc2VfYW5kX1NpemVfRXN0aW1hdGlvbl9DVlBSXzIwMjVfcGFwZXIuaHRtbA==">https://openaccess.thecvf.com/content/CVPR2025/html/Huang_CAP-Net_A_Unified_Network_for_6D_Pose_and_Size_Estimation_CVPR_2025_paper.html<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL1NoYW5lSHVhbmdIWi9DQVBOZXQ=">https://github.com/ShaneHuangHZ/CAPNet<i class="fa fa-external-link-alt"></i></span></li>
+</ul></li>
+<li>Co-op: Correspondence-based Novel Object Pose Estimation
+<ul>
+<li>分类：任意物体方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVuYWNjZXNzLnRoZWN2Zi5jb20vY29udGVudC9DVlBSMjAyNS9odG1sL01vb25fQ28tb3BfQ29ycmVzcG9uZGVuY2UtYmFzZWRfTm92ZWxfT2JqZWN0X1Bvc2VfRXN0aW1hdGlvbl9DVlBSXzIwMjVfcGFwZXIuaHRtbA==">https://openaccess.thecvf.com/content/CVPR2025/html/Moon_Co-op_Correspondence-based_Novel_Object_Pose_Estimation_CVPR_2025_paper.html<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+<li>CRISP: Object Pose and Shape Estimation with Test-Time Adaptation
+<ul>
+<li>分类：任意物体方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVuYWNjZXNzLnRoZWN2Zi5jb20vY29udGVudC9DVlBSMjAyNS9odG1sL1NoaV9DUklTUF9PYmplY3RfUG9zZV9hbmRfU2hhcGVfRXN0aW1hdGlvbl93aXRoX1Rlc3QtVGltZV9BZGFwdGF0aW9uX0NWUFJfMjAyNV9wYXBlci5odG1s">https://openaccess.thecvf.com/content/CVPR2025/html/Shi_CRISP_Object_Pose_and_Shape_Estimation_with_Test-Time_Adaptation_CVPR_2025_paper.html<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL01JVC1TUEFSSy9DUklTUA==">https://github.com/MIT-SPARK/CRISP<i class="fa fa-external-link-alt"></i></span></li>
+</ul></li>
+<li>GCE-Pose: Global Context Enhancement for Category-level Object Pose
+Estimation
+<ul>
+<li>分类：类别级方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVuYWNjZXNzLnRoZWN2Zi5jb20vY29udGVudC9DVlBSMjAyNS9odG1sL0xpX0dDRS1Qb3NlX0dsb2JhbF9Db250ZXh0X0VuaGFuY2VtZW50X2Zvcl9DYXRlZ29yeS1sZXZlbF9PYmplY3RfUG9zZV9Fc3RpbWF0aW9uX0NWUFJfMjAyNV9wYXBlci5odG1s">https://openaccess.thecvf.com/content/CVPR2025/html/Li_GCE-Pose_Global_Context_Enhancement_for_Category-level_Object_Pose_Estimation_CVPR_2025_paper.html<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+<li>GIVEPose: Gradual Intra-class Variation Elimination for RGB-based
+Category-Level Object Pose Estimation
+<ul>
+<li>分类：类别级方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVuYWNjZXNzLnRoZWN2Zi5jb20vY29udGVudC9DVlBSMjAyNS9odG1sL0h1YW5nX0dJVkVQb3NlX0dyYWR1YWxfSW50cmEtY2xhc3NfVmFyaWF0aW9uX0VsaW1pbmF0aW9uX2Zvcl9SR0ItYmFzZWRfQ2F0ZWdvcnktTGV2ZWxfT2JqZWN0X1Bvc2VfQ1ZQUl8yMDI1X3BhcGVyLmh0bWw=">https://openaccess.thecvf.com/content/CVPR2025/html/Huang_GIVEPose_Gradual_Intra-class_Variation_Elimination_for_RGB-based_Category-Level_Object_Pose_CVPR_2025_paper.html<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3ppcWluLWgvR0lWRVBvc2U=">https://github.com/ziqin-h/GIVEPose<i class="fa fa-external-link-alt"></i></span></li>
+</ul></li>
+<li>iG-6DoF: Model-free 6DoF Pose Estimation for Unseen Object via
+Iterative 3D Gaussian Splatting
+<ul>
+<li>分类：任意物体方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVuYWNjZXNzLnRoZWN2Zi5jb20vY29udGVudC9DVlBSMjAyNS9odG1sL0Nhb19pRy02RG9GX01vZGVsLWZyZWVfNkRvRl9Qb3NlX0VzdGltYXRpb25fZm9yX1Vuc2Vlbl9PYmplY3RfdmlhX0l0ZXJhdGl2ZV9DVlBSXzIwMjVfcGFwZXIuaHRtbA==">https://openaccess.thecvf.com/content/CVPR2025/html/Cao_iG-6DoF_Model-free_6DoF_Pose_Estimation_for_Unseen_Object_via_Iterative_CVPR_2025_paper.html<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+<li>Leveraging Global Stereo Consistency for Category-Level Shape and 6D
+Pose Estimation from Stereo Images
+<ul>
+<li>分类：类别级方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVuYWNjZXNzLnRoZWN2Zi5jb20vY29udGVudC9DVlBSMjAyNS9odG1sL1FpdV9MZXZlcmFnaW5nX0dsb2JhbF9TdGVyZW9fQ29uc2lzdGVuY3lfZm9yX0NhdGVnb3J5LUxldmVsX1NoYXBlX2FuZF82RF9Qb3NlX0NWUFJfMjAyNV9wYXBlci5odG1s">https://openaccess.thecvf.com/content/CVPR2025/html/Qiu_Leveraging_Global_Stereo_Consistency_for_Category-Level_Shape_and_6D_Pose_CVPR_2025_paper.html<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+<li>ONDA-Pose: Occlusion-Aware Neural Domain Adaptation for
+Self-Supervised 6D Object Pose Estimation
+<ul>
+<li>分类：实例级方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVuYWNjZXNzLnRoZWN2Zi5jb20vY29udGVudC9DVlBSMjAyNS9odG1sL1Rhbl9PTkRBLVBvc2VfT2NjbHVzaW9uLUF3YXJlX05ldXJhbF9Eb21haW5fQWRhcHRhdGlvbl9mb3JfU2VsZi1TdXBlcnZpc2VkXzZEX09iamVjdF9Qb3NlX0NWUFJfMjAyNV9wYXBlci5odG1s">https://openaccess.thecvf.com/content/CVPR2025/html/Tan_ONDA-Pose_Occlusion-Aware_Neural_Domain_Adaptation_for_Self-Supervised_6D_Object_Pose_CVPR_2025_paper.html<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3Rhbi10YW8xMS9PTkRBLVBvc2U=">https://github.com/tan-tao11/ONDA-Pose<i class="fa fa-external-link-alt"></i></span></li>
+</ul></li>
+<li>One2Any: One-Reference 6D Pose Estimation for Any Object
+<ul>
+<li>分类：任意物体方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVuYWNjZXNzLnRoZWN2Zi5jb20vY29udGVudC9DVlBSMjAyNS9odG1sL0xpdV9PbmUyQW55X09uZS1SZWZlcmVuY2VfNkRfUG9zZV9Fc3RpbWF0aW9uX2Zvcl9BbnlfT2JqZWN0X0NWUFJfMjAyNV9wYXBlci5odG1s">https://openaccess.thecvf.com/content/CVPR2025/html/Liu_One2Any_One-Reference_6D_Pose_Estimation_for_Any_Object_CVPR_2025_paper.html<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2xteTEwMDEvT25lMkFueQ==">https://github.com/lmy1001/One2Any<i class="fa fa-external-link-alt"></i></span></li>
+</ul></li>
+<li>Pos3R: 6D Pose Estimation for Unseen Objects Made Easy
+<ul>
+<li>分类：任意物体方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVuYWNjZXNzLnRoZWN2Zi5jb20vY29udGVudC9DVlBSMjAyNS9odG1sL0RlbmdfUG9zM1JfNkRfUG9zZV9Fc3RpbWF0aW9uX2Zvcl9VbnNlZW5fT2JqZWN0c19NYWRlX0Vhc3lfQ1ZQUl8yMDI1X3BhcGVyLmh0bWw=">https://openaccess.thecvf.com/content/CVPR2025/html/Deng_Pos3R_6D_Pose_Estimation_for_Unseen_Objects_Made_Easy_CVPR_2025_paper.html<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+<li>RefPose: Leveraging Reference Geometric Correspondences for Accurate
+6D Pose Estimation of Unseen Objects
+<ul>
+<li>分类：任意物体方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVuYWNjZXNzLnRoZWN2Zi5jb20vY29udGVudC9DVlBSMjAyNS9odG1sL0tpbV9SZWZQb3NlX0xldmVyYWdpbmdfUmVmZXJlbmNlX0dlb21ldHJpY19Db3JyZXNwb25kZW5jZXNfZm9yX0FjY3VyYXRlXzZEX1Bvc2VfRXN0aW1hdGlvbl9DVlBSXzIwMjVfcGFwZXIuaHRtbA==">https://openaccess.thecvf.com/content/CVPR2025/html/Kim_RefPose_Leveraging_Reference_Geometric_Correspondences_for_Accurate_6D_Pose_Estimation_CVPR_2025_paper.html<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+<li>Rethinking Correspondence-based Category-Level Object Pose
+Estimation
+<ul>
+<li>分类：类别级方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVuYWNjZXNzLnRoZWN2Zi5jb20vY29udGVudC9DVlBSMjAyNS9odG1sL1Jlbl9SZXRoaW5raW5nX0NvcnJlc3BvbmRlbmNlLWJhc2VkX0NhdGVnb3J5LUxldmVsX09iamVjdF9Qb3NlX0VzdGltYXRpb25fQ1ZQUl8yMDI1X3BhcGVyLmh0bWw=">https://openaccess.thecvf.com/content/CVPR2025/html/Ren_Rethinking_Correspondence-based_Category-Level_Object_Pose_Estimation_CVPR_2025_paper.html<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+<li>SCFlow2: Plug-and-Play Object Pose Refiner with Shape-Constraint
+Scene Flow
+<ul>
+<li>分类：实例级优化方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVuYWNjZXNzLnRoZWN2Zi5jb20vY29udGVudC9DVlBSMjAyNS9odG1sL1dhbmdfU0NGbG93Ml9QbHVnLWFuZC1QbGF5X09iamVjdF9Qb3NlX1JlZmluZXJfd2l0aF9TaGFwZS1Db25zdHJhaW50X1NjZW5lX0Zsb3dfQ1ZQUl8yMDI1X3BhcGVyLmh0bWw=">https://openaccess.thecvf.com/content/CVPR2025/html/Wang_SCFlow2_Plug-and-Play_Object_Pose_Refiner_with_Shape-Constraint_Scene_Flow_CVPR_2025_paper.html<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL1ctUVkvU0NGbG93Mg==">https://github.com/W-QY/SCFlow2<i class="fa fa-external-link-alt"></i></span></li>
+</ul></li>
+<li>Structure-Aware Correspondence Learning for Relative Pose Estimation
+<ul>
+<li>分类：任意物体方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVuYWNjZXNzLnRoZWN2Zi5jb20vY29udGVudC9DVlBSMjAyNS9odG1sL0NoZW5fU3RydWN0dXJlLUF3YXJlX0NvcnJlc3BvbmRlbmNlX0xlYXJuaW5nX2Zvcl9SZWxhdGl2ZV9Qb3NlX0VzdGltYXRpb25fQ1ZQUl8yMDI1X3BhcGVyLmh0bWw=">https://openaccess.thecvf.com/content/CVPR2025/html/Chen_Structure-Aware_Correspondence_Learning_for_Relative_Pose_Estimation_CVPR_2025_paper.html<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0N5aGh6bzAyL1NBQy1Qb3NlLWNvZGU=">https://github.com/Cyhhzo02/SAC-Pose-code<i class="fa fa-external-link-alt"></i></span></li>
+</ul></li>
+<li>UA-Pose: Uncertainty-Aware 6D Object Pose Estimation and Online
+Object Completion with Partial References
+<ul>
+<li>分类：任意物体方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVuYWNjZXNzLnRoZWN2Zi5jb20vY29udGVudC9DVlBSMjAyNS9odG1sL0xpX1VBLVBvc2VfVW5jZXJ0YWludHktQXdhcmVfNkRfT2JqZWN0X1Bvc2VfRXN0aW1hdGlvbl9hbmRfT25saW5lX09iamVjdF9Db21wbGV0aW9uX0NWUFJfMjAyNV9wYXBlci5odG1s">https://openaccess.thecvf.com/content/CVPR2025/html/Li_UA-Pose_Uncertainty-Aware_6D_Object_Pose_Estimation_and_Online_Object_Completion_CVPR_2025_paper.html<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+<li>UNOPose: Unseen Object Pose Estimation with an Unposed RGB-D
+Reference Image
+<ul>
+<li>分类：任意物体方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVuYWNjZXNzLnRoZWN2Zi5jb20vY29udGVudC9DVlBSMjAyNS9odG1sL0xpdV9VTk9Qb3NlX1Vuc2Vlbl9PYmplY3RfUG9zZV9Fc3RpbWF0aW9uX3dpdGhfYW5fVW5wb3NlZF9SR0ItRF9SZWZlcmVuY2VfQ1ZQUl8yMDI1X3BhcGVyLmh0bWw=">https://openaccess.thecvf.com/content/CVPR2025/html/Liu_UNOPose_Unseen_Object_Pose_Estimation_with_an_Unposed_RGB-D_Reference_CVPR_2025_paper.html<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3NoYW5pY2UtbC9VTk9Qb3Nl">https://github.com/shanice-l/UNOPose<i class="fa fa-external-link-alt"></i></span></li>
+</ul></li>
+</ol>
+<h2 id="neurips">NeurIPS</h2>
+<ol type="1">
+<li>RFMPose: Generative Category-level Object Pose Estimation via
+Riemannian Flow Matching
+<ul>
+<li>分类：类别级方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9uZXVyaXBzLmNjL3ZpcnR1YWwvMjAyNS9wb3N0ZXIvMTE5Nzc5">https://neurips.cc/virtual/2025/poster/119779<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3NoYWJpb3V5YW5nL1JNRlBvc2U=">https://github.com/shabiouyang/RMFPose<i class="fa fa-external-link-alt"></i></span></li>
+</ul></li>
+<li>SingRef6D: Monocular Novel Object Pose Estimation with a Single RGB
+Reference
+<ul>
+<li>分类：任意物体方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9uZXVyaXBzLmNjL3ZpcnR1YWwvMjAyNS9wb3N0ZXIvMTE1NjMz">https://neurips.cc/virtual/2025/poster/115633<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+</ol>
+<h2 id="iclr">ICLR</h2>
+<ol type="1">
+<li>6D Object Pose Tracking in Internet Videos for Robotic Manipulation
+<ul>
+<li>分类：任意物体跟踪方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVucmV2aWV3Lm5ldC9wZGY/aWQ9MUNJVWtwb2F0YQ==">https://openreview.net/pdf?id=1CIUkpoata<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3BvbmltYXRraW4vZnJlZXBvc2U=">https://github.com/ponimatkin/freepose<i class="fa fa-external-link-alt"></i></span></li>
+</ul></li>
+<li>Learning Shape-Independent Transformation via Spherical
+Representations for Category-Level Object Pose Estimation
+<ul>
+<li>分类：类别级方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVucmV2aWV3Lm5ldC9wZGY/aWQ9RDR4enRLb3owWQ==">https://openreview.net/pdf?id=D4xztKoz0Y<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+</ol>
+<h2 id="icml">ICML</h2>
+<h2 id="eccv">ECCV</h2>
+<h2 id="iccv">ICCV</h2>
+<ol type="1">
+<li>6DOPE-GS: Online 6D Object Pose Estimation using Gaussian Splatting
+<ul>
+<li>分类：任意物体方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVuYWNjZXNzLnRoZWN2Zi5jb20vY29udGVudC9JQ0NWMjAyNS9wYXBlcnMvSmluXzZET1BFLUdTX09ubGluZV82RF9PYmplY3RfUG9zZV9Fc3RpbWF0aW9uX3VzaW5nX0dhdXNzaWFuX1NwbGF0dGluZ19JQ0NWXzIwMjVfcGFwZXIucGRm">https://openaccess.thecvf.com/content/ICCV2025/papers/Jin_6DOPE-GS_Online_6D_Object_Pose_Estimation_using_Gaussian_Splatting_ICCV_2025_paper.pdf<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+<li>BoxDreamer: Dreaming Box Corners for Generalizable
+Object Pose Estimation
+<ul>
+<li>分类：任意物体方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVuYWNjZXNzLnRoZWN2Zi5jb20vY29udGVudC9JQ0NWMjAyNS9wYXBlcnMvWXVfQm94RHJlYW1lcl9EcmVhbWluZ19Cb3hfQ29ybmVyc19mb3JfR2VuZXJhbGl6YWJsZV9PYmplY3RfUG9zZV9Fc3RpbWF0aW9uX0lDQ1ZfMjAyNV9wYXBlci5wZGY=">https://openaccess.thecvf.com/content/ICCV2025/papers/Yu_BoxDreamer_Dreaming_Box_Corners_for_Generalizable_Object_Pose_Estimation_ICCV_2025_paper.pdf<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3pqdTNkdi9Cb3hEcmVhbWVy">https://github.com/zju3dv/BoxDreamer<i class="fa fa-external-link-alt"></i></span></li>
+</ul></li>
+<li>CleanPose: Category-Level Object Pose Estimation via Causal Learning
+and Knowledge Distillation
+<ul>
+<li>分类：类别级方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVuYWNjZXNzLnRoZWN2Zi5jb20vY29udGVudC9JQ0NWMjAyNS9wYXBlcnMvTGluX0NsZWFuUG9zZV9DYXRlZ29yeS1MZXZlbF9PYmplY3RfUG9zZV9Fc3RpbWF0aW9uX3ZpYV9DYXVzYWxfTGVhcm5pbmdfYW5kX0tub3dsZWRnZV9JQ0NWXzIwMjVfcGFwZXIucGRm">https://openaccess.thecvf.com/content/ICCV2025/papers/Lin_CleanPose_Category-Level_Object_Pose_Estimation_via_Causal_Learning_and_Knowledge_ICCV_2025_paper.pdf<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2NocmlzbGluMDYyMS9DbGVhblBvc2U=">https://github.com/chrislin0621/CleanPose<i class="fa fa-external-link-alt"></i></span></li>
+</ul></li>
+<li>Deterministic Object Pose Confidence Region Estimation
+<ul>
+<li>分类：实例级方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9hcnhpdi5vcmcvcGRmLzI1MDYuMjI3MjA=">https://arxiv.org/pdf/2506.22720<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+<li>Environment-Agnostic Pose: Generating Environment-independent Object
+Representations for 6D Pose Estimation
+<ul>
+<li>分类：实例级方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVuYWNjZXNzLnRoZWN2Zi5jb20vY29udGVudC9JQ0NWMjAyNS9wYXBlcnMvWmhhbmdfRW52aXJvbm1lbnQtQWdub3N0aWNfUG9zZV9HZW5lcmF0aW5nX0Vudmlyb25tZW50LWluZGVwZW5kZW50X09iamVjdF9SZXByZXNlbnRhdGlvbnNfZm9yXzZEX1Bvc2VfRXN0aW1hdGlvbl9JQ0NWXzIwMjVfcGFwZXIucGRm">https://openaccess.thecvf.com/content/ICCV2025/papers/Zhang_Environment-Agnostic_Pose_Generating_Environment-independent_Object_Representations_for_6D_Pose_Estimation_ICCV_2025_paper.pdf<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+<li>HccePose(BF): Predicting Front &amp; Back Surfaces to Construct
+Ultra-Dense 2D-3D Correspondences for Pose Estimation
+<ul>
+<li>分类：实例级方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVuYWNjZXNzLnRoZWN2Zi5jb20vY29udGVudC9JQ0NWMjAyNS9wYXBlcnMvV2FuZ19IY2NlUG9zZUJGX1ByZWRpY3RpbmdfRnJvbnRfX0JhY2tfU3VyZmFjZXNfdG9fQ29uc3RydWN0X1VsdHJhLURlbnNlXzJELTNEX0lDQ1ZfMjAyNV9wYXBlci5wZGY=">https://openaccess.thecvf.com/content/ICCV2025/papers/Wang_HccePoseBF_Predicting_Front__Back_Surfaces_to_Construct_Ultra-Dense_2D-3D_ICCV_2025_paper.pdf<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL1dhbmdZdUxpbi1TRVUvSENDRVBvc2U=">https://github.com/WangYuLin-SEU/HCCEPose<i class="fa fa-external-link-alt"></i></span></li>
+</ul></li>
+<li>Joint Learning of Pose Regression and Denoising Diffusion with Score
+Scaling Sampling for Category-level 6D Pose Estimation
+<ul>
+<li>分类：类别级方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVuYWNjZXNzLnRoZWN2Zi5jb20vY29udGVudC9JQ0NWMjAyNS9wYXBlcnMvTGVlX0pvaW50X0xlYXJuaW5nX29mX1Bvc2VfUmVncmVzc2lvbl9hbmRfRGVub2lzaW5nX0RpZmZ1c2lvbl93aXRoX1Njb3JlX0lDQ1ZfMjAyNV9wYXBlci5wZGY=">https://openaccess.thecvf.com/content/ICCV2025/papers/Lee_Joint_Learning_of_Pose_Regression_and_Denoising_Diffusion_with_Score_ICCV_2025_paper.pdf<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+<li>MixRI: Mixing Features of Reference Images for Novel
+Object Pose Estimation
+<ul>
+<li>分类：任意物体方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVuYWNjZXNzLnRoZWN2Zi5jb20vY29udGVudC9JQ0NWMjAyNS9wYXBlcnMvTGl1X01peFJJX01peGluZ19GZWF0dXJlc19vZl9SZWZlcmVuY2VfSW1hZ2VzX2Zvcl9Ob3ZlbF9PYmplY3RfUG9zZV9JQ0NWXzIwMjVfcGFwZXIucGRm">https://openaccess.thecvf.com/content/ICCV2025/papers/Liu_MixRI_Mixing_Features_of_Reference_Images_for_Novel_Object_Pose_ICCV_2025_paper.pdf<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+<li>RayPose: Ray Bundling Diffusion for Template Views in Unseen 6D
+Object Pose Estimation
+<ul>
+<li>分类：任意物体方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVuYWNjZXNzLnRoZWN2Zi5jb20vY29udGVudC9JQ0NWMjAyNS9wYXBlcnMvSHVhbmdfUmF5UG9zZV9SYXlfQnVuZGxpbmdfRGlmZnVzaW9uX2Zvcl9UZW1wbGF0ZV9WaWV3c19pbl9VbnNlZW5fNkRfSUNDVl8yMDI1X3BhcGVyLnBkZg==">https://openaccess.thecvf.com/content/ICCV2025/papers/Huang_RayPose_Ray_Bundling_Diffusion_for_Template_Views_in_Unseen_6D_ICCV_2025_paper.pdf<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+<li>Unified Category-Level Object Detection and Pose Estimation from RGB
+Images using 3D Prototypes
+<ul>
+<li>分类：类别级方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVuYWNjZXNzLnRoZWN2Zi5jb20vY29udGVudC9JQ0NWMjAyNS9wYXBlcnMvRmlzY2hlcl9VbmlmaWVkX0NhdGVnb3J5LUxldmVsX09iamVjdF9EZXRlY3Rpb25fYW5kX1Bvc2VfRXN0aW1hdGlvbl9mcm9tX1JHQl9JbWFnZXNfSUNDVl8yMDI1X3BhcGVyLnBkZg==">https://openaccess.thecvf.com/content/ICCV2025/papers/Fischer_Unified_Category-Level_Object_Detection_and_Pose_Estimation_from_RGB_Images_ICCV_2025_paper.pdf<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0Zpc2NoZXItVG9tL3VuaWZpZWQtZGV0ZWN0aW9uLWFuZC1wb3NlLWVzdGltYXRpb24=">https://github.com/Fischer-Tom/unified-detection-and-pose-estimation<i class="fa fa-external-link-alt"></i></span></li>
+</ul></li>
+</ol>
+<h2 id="aaai">AAAI</h2>
+<ol type="1">
+<li>KeyPose: Category-Level 6D Object Pose Estimation with Self-Adaptive
+Keypoints
+<ul>
+<li>分类：类别级方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vanMuYWFhaS5vcmcvaW5kZXgucGhwL0FBQUkvYXJ0aWNsZS92aWV3LzMzMDQ2">https://ojs.aaai.org/index.php/AAAI/article/view/33046<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+<li>Universal Features Guided Zero-Shot Category-Level Object Pose
+Estimation
+<ul>
+<li>分类：类别级方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vanMuYWFhaS5vcmcvaW5kZXgucGhwL0FBQUkvYXJ0aWNsZS92aWV3LzMyNzEz">https://ojs.aaai.org/index.php/AAAI/article/view/32713<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+</ol>
+<h2 id="ijcai">IJCAI</h2>
+<ol type="1">
+<li>Pre-defined Keypoints Promote Category-level Articulation Pose
+Estimation via Multi-Modal Alignment
+<ul>
+<li>分类：类别级铰接物体方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly93d3cuaWpjYWkub3JnL3Byb2NlZWRpbmdzLzIwMjUvMDIzNy5wZGY=">https://www.ijcai.org/proceedings/2025/0237.pdf<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+<li>SeqPose: An End-to-End Framework to Unify Single-frame and
+Video-based RGB Category-Level Pose Estimation
+<ul>
+<li>分类：类别级方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly93d3cuaWpjYWkub3JnL3Byb2NlZWRpbmdzLzIwMjUvMDEzNy5wZGY=">https://www.ijcai.org/proceedings/2025/0137.pdf<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+</ol>
+<h2 id="wacv">WACV</h2>
+<ol type="1">
+<li>Generalizable Single-View Object Pose Estimation by Two-Side
+Generating and Matching
+<ul>
+<li>分类：任意物体方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVuYWNjZXNzLnRoZWN2Zi5jb20vY29udGVudC9XQUNWMjAyNS9odG1sL1N1bl9HZW5lcmFsaXphYmxlX1NpbmdsZS1WaWV3X09iamVjdF9Qb3NlX0VzdGltYXRpb25fYnlfVHdvLVNpZGVfR2VuZXJhdGluZ19hbmRfTWF0Y2hpbmdfV0FDVl8yMDI1X3BhcGVyLmh0bWw=">https://openaccess.thecvf.com/content/WACV2025/html/Sun_Generalizable_Single-View_Object_Pose_Estimation_by_Two-Side_Generating_and_Matching_WACV_2025_paper.html<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3NjeTYzOS9HZW4yU00=">https://github.com/scy639/Gen2SM<i class="fa fa-external-link-alt"></i></span></li>
+</ul></li>
+<li>Shape-Biased Texture Agnostic Representations for Improved
+Textureless and Metallic Object Detection and 6D Pose Estimation
+<ul>
+<li>分类：实例级方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVuYWNjZXNzLnRoZWN2Zi5jb20vY29udGVudC9XQUNWMjAyNS9odG1sL0hvbmlnX1NoYXBlLUJpYXNlZF9UZXh0dXJlX0Fnbm9zdGljX1JlcHJlc2VudGF0aW9uc19mb3JfSW1wcm92ZWRfVGV4dHVyZWxlc3NfYW5kX01ldGFsbGljX09iamVjdF9XQUNWXzIwMjVfcGFwZXIuaHRtbA==">https://openaccess.thecvf.com/content/WACV2025/html/Honig_Shape-Biased_Texture_Agnostic_Representations_for_Improved_Textureless_and_Metallic_Object_WACV_2025_paper.html<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hvZW5pZ3BldGVyL3JhbmRvbWl6ZWRfdGV4dHVyaW5n">https://github.com/hoenigpeter/randomized_texturing<i class="fa fa-external-link-alt"></i></span></li>
+</ul></li>
+</ol>
+<h2 id="icra">ICRA</h2>
+<ol type="1">
+<li>A Unified End-to-End Network for Category-Level and Instance-Level
+Object Pose Estimation from RGB Images
+<ul>
+<li>分类：实例级&amp;类别级方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2RvY3VtZW50LzExMTI4MjQ3">https://ieeexplore.ieee.org/document/11128247<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+<li>MonoDiff9D: Monocular Category-Level 9D Object Pose Estimation via
+Diffusion Model
+<ul>
+<li>分类：类别级方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2RvY3VtZW50LzExMTI3ODM3">https://ieeexplore.ieee.org/document/11127837<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0NOSmlhbkxpdS9Nb25vRGlmZjlE">https://github.com/CNJianLiu/MonoDiff9D<i class="fa fa-external-link-alt"></i></span></li>
+</ul></li>
+<li>Occlusion-Aware 6D Pose Estimation with Depth-Guided Graph Encoding
+and Cross-Semantic Fusion for Robotic Grasping
+<ul>
+<li>分类：实例级方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2RvY3VtZW50LzExMTI4MjQ4">https://ieeexplore.ieee.org/document/11128248<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+<li>You Only Estimate Once: Unified, One-stage, Real-Time Category-Level
+Articulated Object 6D Pose Estimation for Robotic Grasping
+<ul>
+<li>分类：类别级铰接物体方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2RvY3VtZW50LzExMTI4NTEz">https://ieeexplore.ieee.org/document/11128513<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+</ol>
+<h2 id="siggraph">SIGGRAPH</h2>
+<h2 id="acm-mm">ACM MM</h2>
+<ol type="1">
+<li>CLIP-6D: Empowering CLIP as a Zero-Shot 6D Pose Estimator Through
+Generalizable Object-Specific Representations
+<ul>
+<li>分类：任意物体方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9kbC5hY20ub3JnL2RvaS8xMC4xMTQ1LzM3NDYwMjcuMzc1NDQ5Nw==">https://dl.acm.org/doi/10.1145/3746027.3754497<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+</ol>
+<h2 id="aistats">AISTATS</h2>
+<h2 id="corl">CoRL</h2>
+<ol type="1">
+<li>One View, Many Worlds: Single-Image to 3D object Meets Generative
+Domain Randomization for One-Shot 6D Pose Estimation
+<ul>
+<li>分类：任意物体方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVucmV2aWV3Lm5ldC9wZGY/aWQ9a3RvNHpWbW80dw==">https://openreview.net/pdf?id=kto4zVmo4w<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2d6d3NhbWEvT25lUG9zZXZpYUdlbg==">https://github.com/gzwsama/OnePoseviaGen<i class="fa fa-external-link-alt"></i></span></li>
+</ul></li>
+<li>PicoPose: Progressive Pixel-to-Pixel Correspondence Learning for
+Novel Object Pose Estimation
+<ul>
+<li>分类：任意物体方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVucmV2aWV3Lm5ldC9wZGY/aWQ9RVhnY2tkWUVTcA==">https://openreview.net/pdf?id=EXgckdYESp<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2Zvb2xsaC9QaWNvUG9zZQ==">https://github.com/foollh/PicoPose<i class="fa fa-external-link-alt"></i></span></li>
+</ul></li>
+<li>UnPose: Uncertainty-Guided Diffusion Priors for Zero-Shot Pose
+Estimation
+<ul>
+<li>分类：任意物体方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVucmV2aWV3Lm5ldC9wZGY/aWQ9TDVQSkJkOGFoRA==">https://openreview.net/pdf?id=L5PJBd8ahD<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+</ol>
+<h2 id="iros">IROS</h2>
+<ol type="1">
+<li>6-DoF Object Tracking with Event-based Optical Flow and Frames
+<ul>
+<li>分类：实例级跟踪方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2RvY3VtZW50LzExMjQ1ODY1">https://ieeexplore.ieee.org/document/11245865<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+<li>Distilling 3D distinctive local descriptors for 6D pose estimation
+<ul>
+<li>分类：任意物体方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2RvY3VtZW50LzExMjQ3MzUy">https://ieeexplore.ieee.org/document/11247352<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3Rldi1mYmsvZEdlRGkv">https://github.com/tev-fbk/dGeDi/<i class="fa fa-external-link-alt"></i></span></li>
+</ul></li>
+<li>DynamicPose: Real-time and Robust 6D Object Pose Tracking for
+Fast-Moving Cameras and Objects
+<ul>
+<li>分类：实例级跟踪方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2RvY3VtZW50LzExMjQ3NDAz">https://ieeexplore.ieee.org/document/11247403<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL1JvYm90aWNzLVNUQVItTGFiL0R5bmFtaWNQb3Nl">https://github.com/Robotics-STAR-Lab/DynamicPose<i class="fa fa-external-link-alt"></i></span></li>
+</ul></li>
+<li>Generalizable and Actionable Part Detection and Manipulation with
+SAM-rectified Segmentation and Iterative Pose Refinement
+<ul>
+<li>分类：类别级可操作物体方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2RvY3VtZW50LzExMjQ2MDk0">https://ieeexplore.ieee.org/document/11246094<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+<li>Improving 6D Object Pose Estimation of Metallic Household and
+Industry Objects
+<ul>
+<li>分类：类别级方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2RvY3VtZW50LzExMjQ3MzE0">https://ieeexplore.ieee.org/document/11247314<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+<li>MK-Pose: Category-Level Object Pose Estimation via Multimodal-Based
+Keypoint Learning
+<ul>
+<li>分类：类别级方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2RvY3VtZW50LzExMjQ3MzI1">https://ieeexplore.ieee.org/document/11247325<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3lhbmd5aWZhbllZRi9NSy1Qb3Nl">https://github.com/yangyifanYYF/MK-Pose<i class="fa fa-external-link-alt"></i></span></li>
+</ul></li>
+<li>Occlusion-Aware 6D Pose Estimation with Visual Observation Guided
+Diffusion Model
+<ul>
+<li>分类：类别级方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2RvY3VtZW50LzExMjQ3MTEy">https://ieeexplore.ieee.org/document/11247112<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+<li>OmniPose6D: Towards Short-Term Object Pose Tracking in Dynamic
+Scenes from Monocular RGB
+<ul>
+<li>分类：任意物体跟踪方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2RvY3VtZW50LzExMjQ2OTQ5">https://ieeexplore.ieee.org/document/11246949<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+<li>RAG-6DPose: Retrieval-Augmented 6D Pose Estimation via Leveraging
+CAD as Knowledge Base
+<ul>
+<li>分类：实例级方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2RvY3VtZW50LzExMjQ2NDQ5">https://ieeexplore.ieee.org/document/11246449<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL1NyZXNzZXJTL1JBRy02RFBvc2UtY29kZQ==">https://github.com/SresserS/RAG-6DPose-code<i class="fa fa-external-link-alt"></i></span></li>
+</ul></li>
+<li>RCGNet: RGB-based Category-Level 6D Object Pose Estimation with
+Geometric Guidance
+<ul>
+<li>分类：类别级方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2RvY3VtZW50LzExMjQ3NDQy">https://ieeexplore.ieee.org/document/11247442<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+<li>RGBTrack: Fast, Robust Depth-Free 6D Pose Estimation and Tracking
+<ul>
+<li>分类：实例级跟踪方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2RvY3VtZW50LzExMjQ3Mzgx">https://ieeexplore.ieee.org/document/11247381<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0dyZWF0ZW5Bbm95bW91cy9SR0JUcmFjaw==">https://github.com/GreatenAnoymous/RGBTrack<i class="fa fa-external-link-alt"></i></span></li>
+</ul></li>
+<li>Uncertainty-Aware Knowledge Distillation for Compact and Efficient
+6DoF Pose Estimation
+<ul>
+<li>分类：实例级方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2RvY3VtZW50LzExMjQ1OTgy">https://ieeexplore.ieee.org/document/11245982<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+<li>VAPO: Visibility-Aware Keypoint Localization for Efficient 6DoF
+Object Pose Estimation
+<ul>
+<li>分类：实例级方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2RvY3VtZW50LzExMjQ3MDEy">https://ieeexplore.ieee.org/document/11247012<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL1J1eWlMaWFuL1ZBUE8=">https://github.com/RuyiLian/VAPO<i class="fa fa-external-link-alt"></i></span></li>
+</ul></li>
+</ol>
+<h2 id="icpr">ICPR</h2>
+<h2 id="rss">RSS</h2>
+<ol type="1">
+<li>V-HOP: Visuo-Haptic 6D Object Pose Tracking
+<ul>
+<li>分类：实例级跟踪方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9yb2JvdGljc2NvbmZlcmVuY2Uub3JnLzIwMjUvcHJvZ3JhbS9wYXBlcnMvMzcv">https://roboticsconference.org/2025/program/papers/37/<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2Jyb3duLWl2bC92LWhvcA==">https://github.com/brown-ivl/v-hop<i class="fa fa-external-link-alt"></i></span></li>
+</ul></li>
+</ol>
+<h2 id="ijcnn">IJCNN</h2>
+<h2 id="bmvc">BMVC</h2>
+<h2 id="dv">3DV</h2>
+<ol type="1">
+<li>GS-Pose: Generalizable Segmentation-Based 6D Object Pose Estimation
+With 3D Gaussian Splatting
+<ul>
+<li>分类：任意物体方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9vcGVucmV2aWV3Lm5ldC9wZGY/aWQ9OHhIV1dYWjlwcQ==">https://openreview.net/pdf?id=8xHWWXZ9pq<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2RpbmdkaW5nY2FpL0dTUG9zZQ==">https://github.com/dingdingcai/GSPose<i class="fa fa-external-link-alt"></i></span></li>
+</ul></li>
+</ol>
+<h2 id="icip">ICIP</h2>
+<ol type="1">
+<li>Adapting Foundation Features via Cross-View Contrastive Learning for
+Unseen Object Pose Estimation
+<ul>
+<li>分类：任意物体方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2RvY3VtZW50LzExMDg0MzU4">https://ieeexplore.ieee.org/document/11084358<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+</ol>
+<h2 id="accv">ACCV</h2>
+<h2 id="icme">ICME</h2>
+<ol type="1">
+<li>Diff-Art: Category-level Articulation Pose Estimation via
+Conditional Diffusion
+<ul>
+<li>分类：类别级铰接物体方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2RvY3VtZW50LzExMjA5NTk2">https://ieeexplore.ieee.org/document/11209596<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+<li>GASEM: Boosting Generalized and Actionable Parts Segmentation and
+Pose Estimation via Object Motion Perception
+<ul>
+<li>分类：类别级铰接物体方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2RvY3VtZW50LzExMjA4OTA3">https://ieeexplore.ieee.org/document/11208907<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL1ppcmNvbml1bTIzMy9HQVNFTQ==">https://github.com/Zirconium233/GASEM<i class="fa fa-external-link-alt"></i></span></li>
+</ul></li>
+<li>Multi-mode Bidirectional Feature Fusion and Domain-consistency
+Refinement for Real-time Monocular 6D Object Pose Estimation
+<ul>
+<li>分类：实例级方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9pZWVleHBsb3JlLmllZWUub3JnL2RvY3VtZW50LzExMjA4OTI0">https://ieeexplore.ieee.org/document/11208924<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+</ol>
+<h2 id="ecai">ECAI</h2>
+<h2 id="ismar">ISMAR</h2>
+<h2 id="siggraph-asia">SIGGRAPH Asia</h2>
+<h2 id="icann">ICANN</h2>
+<ol type="1">
+<li>RDGE-6D: Reverse Direction Geometry Injection for 6D Pose Estimation
+<ul>
+<li>分类：实例级方法</li>
+<li>论文：<span class="exturl" data-url="aHR0cHM6Ly9saW5rLnNwcmluZ2VyLmNvbS9jaGFwdGVyLzEwLjEwMDcvOTc4LTMtMDMyLTA0NTQ2LTFfMjU=">https://link.springer.com/chapter/10.1007/978-3-032-04546-1_25<i class="fa fa-external-link-alt"></i></span></li>
+<li>代码：代码未开源</li>
+</ul></li>
+</ol>
+<h2 id="acml">ACML</h2>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>请我一杯咖啡吧！</div>
+  <button>
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="https://imgr2.karltan.com/alipay.png" alt="Karl 微信">
+        <span>微信</span>
+      </div>
+      <div>
+        <img src="https://imgr2.karltan.com/alipay.png" alt="Karl 支付宝">
+        <span>支付宝</span>
+      </div>
+
+  </div>
+</div>
+
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>Karl
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.karltan.com/paper-list/2025-ope.html" title="【论文列表】2025年Object Pose Estimation顶会论文列表">https://blog.karltan.com/paper-list/2025-ope.html</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LzQuMC8="><i class="fab fa-fw fa-creative-commons"></i>BY</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+      </div>
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Object-Pose-Estimation/" rel="tag"><i class="fa fa-tag"></i> Object Pose Estimation</a>
+              <a href="/tags/2025/" rel="tag"><i class="fa fa-tag"></i> 2025</a>
+              <a href="/tags/CVPR/" rel="tag"><i class="fa fa-tag"></i> CVPR</a>
+              <a href="/tags/NeurIPS/" rel="tag"><i class="fa fa-tag"></i> NeurIPS</a>
+              <a href="/tags/ICLR/" rel="tag"><i class="fa fa-tag"></i> ICLR</a>
+              <a href="/tags/ICML/" rel="tag"><i class="fa fa-tag"></i> ICML</a>
+              <a href="/tags/ECCV/" rel="tag"><i class="fa fa-tag"></i> ECCV</a>
+              <a href="/tags/ICCV/" rel="tag"><i class="fa fa-tag"></i> ICCV</a>
+              <a href="/tags/AAAI/" rel="tag"><i class="fa fa-tag"></i> AAAI</a>
+              <a href="/tags/IJCAI/" rel="tag"><i class="fa fa-tag"></i> IJCAI</a>
+              <a href="/tags/WACV/" rel="tag"><i class="fa fa-tag"></i> WACV</a>
+              <a href="/tags/ICRA/" rel="tag"><i class="fa fa-tag"></i> ICRA</a>
+              <a href="/tags/SIGGRAPH/" rel="tag"><i class="fa fa-tag"></i> SIGGRAPH</a>
+              <a href="/tags/ACM-MM/" rel="tag"><i class="fa fa-tag"></i> ACM MM</a>
+              <a href="/tags/AISTATS/" rel="tag"><i class="fa fa-tag"></i> AISTATS</a>
+              <a href="/tags/CoRL/" rel="tag"><i class="fa fa-tag"></i> CoRL</a>
+              <a href="/tags/IROS/" rel="tag"><i class="fa fa-tag"></i> IROS</a>
+              <a href="/tags/ICPR/" rel="tag"><i class="fa fa-tag"></i> ICPR</a>
+              <a href="/tags/RSS/" rel="tag"><i class="fa fa-tag"></i> RSS</a>
+              <a href="/tags/IJCNN/" rel="tag"><i class="fa fa-tag"></i> IJCNN</a>
+              <a href="/tags/BMVC/" rel="tag"><i class="fa fa-tag"></i> BMVC</a>
+              <a href="/tags/3DV/" rel="tag"><i class="fa fa-tag"></i> 3DV</a>
+              <a href="/tags/ICIP/" rel="tag"><i class="fa fa-tag"></i> ICIP</a>
+              <a href="/tags/ACCV/" rel="tag"><i class="fa fa-tag"></i> ACCV</a>
+              <a href="/tags/ICME/" rel="tag"><i class="fa fa-tag"></i> ICME</a>
+              <a href="/tags/ECAI/" rel="tag"><i class="fa fa-tag"></i> ECAI</a>
+              <a href="/tags/ISMAR/" rel="tag"><i class="fa fa-tag"></i> ISMAR</a>
+              <a href="/tags/SIGGRAPH-Asia/" rel="tag"><i class="fa fa-tag"></i> SIGGRAPH Asia</a>
+              <a href="/tags/ICANN/" rel="tag"><i class="fa fa-tag"></i> ICANN</a>
+              <a href="/tags/ACML/" rel="tag"><i class="fa fa-tag"></i> ACML</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/setup/tmux-configuration-file.html" rel="prev" title="【环境配置】tmux配置文件">
+                  <i class="fa fa-angle-left"></i> 【环境配置】tmux配置文件
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="waline"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="beian"><span class="exturl" data-url="aHR0cHM6Ly9iZWlhbi5taWl0Lmdvdi5jbg==">京ICP备2025133035号-1 </span>
+  </div>
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Karl</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>站点总字数：</span>
+    <span title="站点总字数">4k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">14 分钟</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span> 强力驱动
+  </div><div class="custom-footer upyun-footer">
+    <span>本网站由</span>
+        <a class="upyun-link" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank" rel="noopener external nofollow">
+            <img class="upyun-logo" src="https://imgr2.karltan.com/upyun_logos/又拍云_logo5.png" alt="又拍云">
+        </a>
+    <span>提供CDN加速/云存储服务</span>
+</div>
+
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-CN","enable":true,"serverURL":"https://waline.karltan.com","cssUrl":"https://unpkg.com/@waline/client@v2/dist/waline.css","commentCount":true,"pageview":false,"locale":{"placeholder":"请畅所欲言！"},"meta":["nick","mail","link"],"requiredMeta":["nick","mail"],"wordLimit":0,"login":"disable","pageSize":10,"el":"#waline","comment":true,"libUrl":"//unpkg.com/@waline/client@v2/dist/waline.js","path":"/paper-list/2025-ope.html"}</script>
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css">
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.waline.el).then(() =>
+    NexT.utils.getScript(CONFIG.waline.libUrl, { condition: window.Waline })
+  ).then(() => 
+    Waline.init(Object.assign({}, CONFIG.waline,{ el: document.querySelector(CONFIG.waline.el) }))
+  );
+});
+</script>
+<script>
+(() => {
+    if (!navigator.clipboard || typeof navigator.clipboard.writeText !== 'function') return;
+
+    const writeText = navigator.clipboard.writeText.bind(navigator.clipboard);
+    let isCopyCode = false;
+
+    document.addEventListener('click', event => {
+        if (!event.target.closest('.copy-btn')) return;
+
+        isCopyCode = true;
+        setTimeout(() => {
+            isCopyCode = false;
+        });
+    }, true);
+
+    navigator.clipboard.writeText = text => {
+        if (isCopyCode && typeof text === 'string') {
+            text = text.replace(/[\r\n]+$/, '');
+        }
+
+        return writeText(text);
+    };
+})();
+</script>
+
+</body>
+</html>
